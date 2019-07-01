@@ -1,1 +1,19 @@
-Hello
+## Checking Intrinsic Delay
+
+Video recorded with a Google Pixel 2, at 120fps and 240fps.
+
+Video's played back in Avidemux software to record timestamps for light onset in real life, and in webcam video.
+
+Codebook:
+Col 1: light - refers to which light it was in the sequence
+Col 2: real_onset - time at which the light turned on in real life
+Col 3: oculus_onset - time at which the light turned on in the video recorded and played back in the Oculus
+Col 4: delay_s - the delay between the two onsets (oculus_onset - real_onset)
+Col 5: delay_ms - the delay between the two onsets in milliseconds (delay_s*1000)
+Col 6: normal_delay - the delay between the two onsets in real time (delay_ms / 8 in 240fps, delay_ms / 4 in 120fps)
+
+Each light was a 500ms flash of red light, with 2s between each flash.
+
+Mean delay in the 240fps video was 221.82 (SD = 19.04).
+
+
